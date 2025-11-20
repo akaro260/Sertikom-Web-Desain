@@ -1,5 +1,10 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
 body{
-    font-family: 'Times New Roman', Times, serif;
+    background-color: #00050d;
 }
 .hero{
     background-image: linear-gradient(rgba(0, 0, 0, 0.801)), url(../assets/IMG/hero.png);
@@ -9,4 +14,74 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+#navbar {
+    background-color: #00050d;
+}
+/* Border card */
+.border-umroh {
+  border: 2px solid #0a7e51;     /* warna border */
+  border-radius: 15px;           /* lengkukan border */
+  overflow: hidden;              /* biar gambar nyatu */
+  transition: .3s;
+}
 
+/* Hover biar mewah */
+.border-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Button */
+.btn-paket {
+  display: inline-block;
+  background: #0a7e51;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .3s ease;
+  border: none;
+}
+
+.btn-paket:hover {
+  background: #096c45;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,.2);
+}
+
+/* Background hitam ke biru */
+.section-paket {
+  background: linear-gradient( #00050d);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Border putih */
+.border-umroh {
+  border: 2px solid white !important;
+  border-radius: 12px;
+}
+
+/* Card styling */
+.card-paket {
+  background: #ffffff;
+  transition: 0.3s;
+}
+
+.card-paket:hover {
+  transform: translateY(-5px);
+}
+#about{
+    background: linear-gradient( #00050d);
+    padding-top: 300px;
+    padding-bottom: 100px;
+    
+}
+#tentang{
+    color: rgb(201, 201, 201);
+}
+#terpecaya{
+  background: #00050d;
+  
+}
