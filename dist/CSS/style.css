@@ -68,7 +68,6 @@ body{
   background: #ffffff;
   transition: 0.3s;
 }
-
 .card-paket:hover {
   transform: translateY(-5px);
 }
