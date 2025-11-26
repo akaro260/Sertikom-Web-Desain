@@ -57,7 +57,7 @@ body{
 /* Card styling */
 .card-paket {
   padding: 20px;
-  background: #c7c5c5;
+  background: #faf9f9;
   transition: 0.3s;
 }
 .card-paket:hover {
