@@ -18,12 +18,6 @@ body{
     background-color: #00050d;
 }
 /* Border card */
-.border-umroh {
-  border: 2px solid #0a7e51;     /* warna border */
-  border-radius: 15px;           /* lengkukan border */
-  overflow: hidden;              /* biar gambar nyatu */
-  transition: .3s;
-}
 
 /* Hover biar mewah */
 .border-custom:hover {
@@ -33,43 +27,40 @@ body{
 
 /* Button */
 .btn-paket {
-  display: inline-block;
-  background: #0a7e51;
+  
+  background: #032d70;
   color: white;
-  padding: 10px 25px;
+  padding: 15px;
   border-radius: 8px;
-  font-weight: 600;
   text-decoration: none;
   transition: .3s ease;
   border: none;
 }
 
 .btn-paket:hover {
-  background: #096c45;
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0,0,0,.2);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.603);
 }
 
 /* Background hitam ke biru */
 .section-paket {
   background: linear-gradient( #00050d);
-  padding-top: 60px;
+  padding-top: 110px;
   padding-bottom: 60px;
 }
 
 /* Border putih */
-.border-umroh {
-  border: 2px solid white !important;
-  border-radius: 12px;
-}
+
 
 /* Card styling */
 .card-paket {
-  background: #ffffff;
+  padding: 20px;
+  background: #c7c5c5;
   transition: 0.3s;
 }
 .card-paket:hover {
-  transform: translateY(-5px);
+  transform: translateY(5px);
+
 }
 #about{
     background: linear-gradient( #00050d);
@@ -83,4 +74,43 @@ body{
 #terpecaya{
   background: #00050d;
   
+}
+#hubugi{
+  background: #00050d;
+}
+
+.terpercaya{
+   padding: 20px;
+  background: #c7c5c5;
+  transition: 0.3s;
+}
+.terpercaya:hover{
+   transform: translateY(-5px);
+}
+/* Hover untuk card tanpa ganggu card-paket */
+.card-hover {
+  background: #00050d;       /* dark blue elegan */
+  border: none;
+  border-radius: 14px;
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* Hover khusus gambar */
+.card-hover img {
+  transition: 0.4s ease;
+}
+
+.card-hover:hover img {
+  transform: scale(1.08);
+  filter: brightness(0.9);
+}
+.login{
+  padding-top: 12px;
+  padding-bottom:13px ;
 }
