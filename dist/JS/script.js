@@ -59,4 +59,36 @@ else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
         // kamu bisa ganti alert dengan WhatsApp / Firebase / API kirim email
     }
 });
+
 // cek email
+const buttons = document.querySelectorAll('.filter-btn');
+const cards = document.querySelectorAll('.paket-card');
+
+buttons.forEach(btn => {
+  btn.addEventListener('click', () => {
+
+    buttons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    let filter = btn.getAttribute('data-filter');
+
+    cards.forEach(card => {
+      let category = card.getAttribute('data-category');
+
+      if (filter === "all" || filter === category) {
+        card.classList.remove('hide');
+        card.setAttribute("data-aos", "zoom-in-up");
+
+        setTimeout(() => {
+          AOS.refresh();
+        }, 50);
+
+      } else {
+        card.classList.add('hide');
+      }
+    });
+
+  });
+});
+
+
