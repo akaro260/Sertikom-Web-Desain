@@ -91,4 +91,13 @@ buttons.forEach(btn => {
   });
 });
 
+  window.addEventListener("load", function() {
+    const dots = document.getElementById("preloader-dots");
+
+    dots.style.opacity = "0";
+
+    setTimeout(() => {
+      dots.style.display = "none";
+    }, 500);
+  });
 
