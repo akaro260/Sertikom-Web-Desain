@@ -110,3 +110,40 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 });
+// ==== ACTIVE SAAT DI-KLIK ====
+
+
+// ==== ACTIVE SAAT SCROLL ====
+
+// ==== ACTIVE SAAT DI-KLIK ====
+const navLinks = document.querySelectorAll(".nav-link");
+
+navLinks.forEach(link => {
+  link.addEventListener("click", function() {
+    navLinks.forEach(l => l.classList.remove("active"));
+    this.classList.add("active");
+  });
+});
+
+// ==== ACTIVE SAAT SCROLL ====
+const sections = document.querySelectorAll("section[id]");
+
+window.addEventListener("scroll", () => {
+  let scrollPos = window.pageYOffset + 140; // offset navbar
+
+  sections.forEach(sec => {
+    const top = sec.offsetTop;
+    const height = sec.offsetHeight;
+    const id = sec.getAttribute("id");
+
+    if (scrollPos >= top && scrollPos < top + height) {
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${id}`) {
+          link.classList.add("active");
+        }
+      });
+    }
+  });
+});
+

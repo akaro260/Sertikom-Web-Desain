@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 *{
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -14,9 +18,53 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
-#navbar {
-    background-color: #00050d;
+/* =============================
+   NAVBAR ACTIVE & HOVER EFFECT
+   ============================= */
+
+/* RESET BAWAAN BOOTSTRAP */
+.nav-link {
+  position: relative;
+  color: #8c8d91 ;
+  font-weight: 500;
+  padding: 6px 12px; 
+  transition: color 0.3s ease;
 }
+
+/* UNDERLINE */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #4d79ff;
+  transform: translateX(-50%);
+  transition: width 0.35s ease-out;
+}
+
+/* HOVER */
+.nav-link:hover::after {
+  width: 60%;
+}
+
+/* ACTIVE */
+.nav-link.active::after {
+  width: 100%;
+}
+
+
+#navbar {
+  transition: 0.35s ease;
+  background: transparent;
+}
+
+#navbar.scrolled {
+  background-color: #00050d;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+
 /* Border card */
 .texthero{
   color: white;
